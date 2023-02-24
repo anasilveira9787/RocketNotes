@@ -15,9 +15,6 @@ display: flex;
 justify-content: space-between;
 padding: 0 80px;
 
-background-color: red;
-
-
 `;
 
 export const Profile = styled.div`
@@ -28,8 +25,8 @@ align-items: center;
     width: 56px;
     height: 56px;
     border-radius: 50%;
-
-    >div {
+    }
+>div {
         display: flex;
         flex-direction: column;
         margin-left: 16px;
@@ -43,7 +40,16 @@ align-items: center;
             font-size: 18px;
             color: ${({ theme }) => theme.COLORS.WHITE};
         }
-    }
+    }`;
+
+export const Logout = styled.button`
+
+border: none;
+background: none;
+
+>svg {
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    font-size 36px;
 }
 
-`
+`;
